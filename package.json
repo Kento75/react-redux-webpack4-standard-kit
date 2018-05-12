@@ -13,7 +13,7 @@
     "build": "NODE_ENV=production webpack --mode production --config web.prod.config.js --colors",
     "build-windows": "set NODE_ENV=production  && webpack --config web.prod.config.js --mode production --colors",
     "build-staging": "NODE_ENV=staging webpack --mode production --config web.prod.config.js --colors",
-    "lintThis": "eslint src/* --ext .jsx --fix && eslint src/* --ext .js --fix"
+    "lintThis": "eslint src --ext .js,.jsx --fix"
   },
   "pre-commit": [
     "lintThis"
